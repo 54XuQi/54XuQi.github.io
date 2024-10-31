@@ -145,6 +145,7 @@
   #recent-posts > .recent-post-item {
     background: rgba(255,255,255,0.9)
   }
+  /* 页脚背景色 */
   footer#footer {
     background: rgba(167,174,192,0.5)
   }
