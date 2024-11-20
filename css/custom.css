@@ -127,6 +127,14 @@
     background: rgba(255, 255, 255, 0.1)
   }
 
+  details.folding-tag div.content {
+    background: rgba(255, 255, 255, 0.1)!important;
+  }
+
+  details.folding-tag {
+    background: rgba(255 ,255,255, 0.0)!important;
+  }
+
   /* 侧边栏背景色 */
   #aside-content .card-widget {
     background: rgba(255, 255, 255, 0.5)
@@ -145,6 +153,11 @@
   #recent-posts > .recent-post-item {
     background: rgba(255,255,255,0.9)
   }
+
+  [data-theme="dark"] #recent-posts > .recent-post-item {
+    background: rgba(255,255,255,0.2)
+  }
+
   /* 页脚背景色 */
   footer#footer {
     background: rgba(167,174,192,0.5)
@@ -155,11 +168,40 @@ body,html {
   width: 100%;
   cursor: url(/cursor/default.cur), auto !important;
 }
-
+.aplayer-music:hover {
+  cursor: url(/cursor/default.cur), auto !important;
+  }
+.aplayer-lrc:hover {
+  cursor: url(/cursor/default.cur), auto !important;
+  }
+.aplayer-lrc-current:hover {
+  cursor: url(/cursor/default.cur), auto !important;
+  }
+.aplayer-lrc-contents:hover {
+  cursor: url(/cursor/default.cur), auto !important;
+  }
 /* 链接 hover 光标 */
 a:hover, a:focus, a:active {
   cursor: url(/cursor/pointer.cur), auto !important;
 }
+
+summary:hover, summary:focus, summary:active {
+  cursor: url(/cursor/pointer.cur), auto !important;
+}
+
+.aplayer-list li:hover {
+  cursor: url(/cursor/pointer.cur), auto !important;
+}
+.aplayer-pic:hover {
+  cursor: url(/cursor/pointer.cur), auto !important;
+}
+svg:hover {
+  cursor: url(/cursor/pointer.cur), auto !important;
+}
+button:hover {
+  cursor: url(/cursor/pointer.cur), auto !important;
+} 
+
 
 /* 滚动条样式 和选中文本颜色*/
 ::-webkit-scrollbar {
@@ -191,7 +233,7 @@ a:hover, a:focus, a:active {
 	background-color: transparent;
   }
   
-  ::-moz-selection { /*选中文本的颜色*/
-	color: #fff;
-	background-color: #FCA4D4;
+  ::-moz-selection { /*选中文本的颜色 */
+	 color: #fff;
+	background-color: #FCA4D4; 
   }
